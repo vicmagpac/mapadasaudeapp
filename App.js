@@ -15,7 +15,9 @@ import {StyleSheet} from 'react-native';
 const App: () => React$Node = () => {
   return (
     <WebView 
-      source={{uri: 'https://mapa.sus.ce.gov.br'}} style={{marginTop: 20}} 
+      originWhitelist={['*']}
+      source={{uri: 'https://mapa.sus.ce.gov.br'}} 
+      javaScriptEnabled={true}
       />
   );
 };
